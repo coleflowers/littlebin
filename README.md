@@ -1,4 +1,6 @@
-jsforphotoshop
+﻿jsforphotoshop
 ==============
 
 photoshop 脚本
+
+……
