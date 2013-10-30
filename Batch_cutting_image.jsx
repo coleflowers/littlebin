@@ -20,7 +20,7 @@ app.preferences.typeUnits = TypeUnits.PIXELS;
 
 //定义ScriptUI
 var windowContent='dialog { \
-		text: "按比例批量裁切图片", \
+		text: "按比例批量裁切图片_@甘肅隴南小馬", \
 		orientation: "column", \
 		alignChildren: "left" ,\
 		folder: Group { orientation: "column" , alignChildren: "left" ,\
