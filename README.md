@@ -8,4 +8,8 @@ Batch_cutting_image.jsx是一个Photoshop script，实现批量裁切相应文�
 
 ## appicons.jsx
 
-图片尺寸批量处理为指定数字的正方形，可用于ios,addroid的app icon尺寸调整
+图片尺寸批量处理为指定数字的正方形，可用于ios,addroid的app icon尺寸调整。
+
+## paintCircleAndCircle.jsx
+
+javascript在Photoshop中画图实验。
