@@ -3,7 +3,7 @@
  * description : icons尺寸批量生成 
  *               还是以前做编辑的时候看的javascript for photoshop 想不到如今做app也用到啦
  *               此脚本的作用以sizeArr中配置的数字保存选定的图片为正方形并以 ixi.png 的形式保存
- * author      : 马磊雷
+ * author      : coleflowers
  * date        : 20150630
  */
 
