@@ -121,6 +121,7 @@ function resize1(file){
 	} 
 }
 
+// link : https://stackoverflow.com/questions/47476719/javascript-photoshop-how-to-get-machine-username
 /**
  * Ascertains whether the Operating System is Macintosh.
  * @returns {Boolean} True if the OS is Macintosh, otherwise false.
