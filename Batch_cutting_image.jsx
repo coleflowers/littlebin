@@ -2,8 +2,7 @@
 *
 *
 *     Photoshop批量裁切图片脚本
-*     22:02 2013/6/2 by 马磊雷
-*     Sina:     http://weibo.com/u/3148693702
+*     22:02 2013/6/2 by coleflowers
 *     Email:    coleflowersma@gmail.com
 *     Twitter:  https://twitter.com/coleflowers3
 *
