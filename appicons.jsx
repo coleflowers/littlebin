@@ -8,10 +8,14 @@
  */
 
 /* 配置尺寸数组 */
-var sizeArr = new Array(2222, 21, 98, 26);
+var sizeArr = new Array(16, 32, 64, 128, 256, 512, 1024);
 
 /* 配置目录 */ 
 var savepath = "C:\\Users\\Administrator\\Desktop\\";
+if (isMacOS()) {
+	savepath = "/Users/"+ getUserName() +"/Desktop/";
+}
+
 /*
 var defaultFolder = "~";
 var saveFolder = Folder.selectDialog("选择要保存的文件夹", defaultFolder);
@@ -44,7 +48,12 @@ function resize2(file){
 			alert('注意:图片尺寸'+file.height+'小于'+sizeArr[i]);
 		}
 		file.resizeImage(sizeArr[i], sizeArr[i]);
-		file.saveAs( new File(savepath+sizeArr[i]+"x"+sizeArr[i]+".png"), PNGSaveOptions);
+		if (isMacOS()) {
+			file.saveAs(new File(savepath+sizeArr[i]+"x"+sizeArr[i]+".png"), PNGSaveOptions, true);
+		} else {
+			file.saveAs(new File(savepath+sizeArr[i]+"x"+sizeArr[i]+".png"), PNGSaveOptions);
+		}
+		
 	}
 	file.close(SaveOptions.DONOTSAVECHANGES);
 }
@@ -110,4 +119,20 @@ function resize1(file){
 		    desc23.putEnumerated( idSvng, idYsN, idN );
 		executeAction( idCls, desc23, DialogModes.NO );
 	} 
+}
+
+/**
+ * Ascertains whether the Operating System is Macintosh.
+ * @returns {Boolean} True if the OS is Macintosh, otherwise false.
+ */
+function isMacOS() {
+  return ($.os.toLowerCase().indexOf('mac') >= 0);
+}
+
+/**
+ * Obtains the computers name/username.
+ * @returns {String} The name of the computers username.
+ */
+function getUserName() {
+  return (isMacOS()) ? $.getenv("USER") : $.getenv("USERNAME");
 }
