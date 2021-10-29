@@ -1,5 +1,11 @@
 # 小玩意儿
 
+## shell
+
+### icns.sh
+
+一键生成icns图标，需要运行在macOS
+
 ## php脚本
 
 ### pprefix.php
