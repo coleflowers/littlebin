@@ -8,7 +8,7 @@
  */
 
 /* 配置尺寸数组 */
-var sizeArr = new Array(16, 32, 64, 128, 256, 512, 1024);
+var sizeArr = new Array(16,20, 28, 29, 32, 40, 58, 60, 64,76, 80, 87, 108, 120,128, 152, 167, 180,  256, 512, 1024);
 
 /* 配置目录 */ 
 var savepath = "C:\\Users\\Administrator\\Desktop\\";
